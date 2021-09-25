@@ -1,0 +1,110 @@
+.article-nav{position: relative;}
+.article-nav__wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: stretch;
+	align-items: stretch;
+	justify-content: space-between;
+}
+.article-nav__item{
+	display: block;
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+	color: #fff;
+}
+.article-nav__item-pic{	
+	height: 300px;
+	position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: 50%;
+    -webkit-transform: translateZ(0) scale(1);
+    transform: translateZ(0) scale(1);
+    transition: all 1.5s cubic-bezier(.215, .61, .355, 1) 0s;
+}
+.article-nav__item-pic:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #15151f;
+    opacity: .5;
+}
+.article-nav__item:hover .article-nav__item-pic{	
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.article-nav__name{
+	position: relative;
+	z-index: 3;
+	height: 300px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	width: 370px;
+    height: 300px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 20px;
+}
+.article-nav__item .swiper-arrow{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+}
+.article-nav__item--prev .swiper-arrow{
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	left: -80px;
+}
+.article-nav__item--next .swiper-arrow{left: auto;right: -80px;}
+.article-nav__all{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 4;
+}
+.article-nav__all.btn-black{display: none;}
+@media only screen and (max-width : 1279px){
+	.article-nav__all,
+	.article-nav__wrap{display: none;}
+	.article-nav__all.btn-black{
+		display: block;
+		position: static;
+		margin: 0 auto;
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		width: 180px;
+	}
+	.article-nav{
+		padding: 15px;
+		margin-bottom: 40px;
+	}
+}
+@media only screen and (max-width : 767px){
+	.article-nav__all.btn-black{width: 100%;}
+}

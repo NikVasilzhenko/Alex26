@@ -1,0 +1,186 @@
+.team{
+	height: 100vh;
+	min-height: 930px;
+	background: center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.team:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #15151f;
+    opacity: .7;
+}
+.team__wrap{
+	position: relative;
+	z-index: 3;
+	padding: 25px 0;
+	width: 100%;
+}
+.team__inner{
+	width: 100%;
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+.team__slider .swiper-wrapper{}
+.team__slide-pic{
+	background: center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+    height: 470px;
+	position: relative;
+}
+.team__slider{overflow: hidden}
+.team__slider-container{position: relative;}
+.team__slide:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 130px;
+    background: -webkit-linear-gradient(transparent 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .6));
+    background: -o-linear-gradient(transparent 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .6));
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .6));
+}
+.team__slide-main{
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 25px 30px;
+	color: #fff;
+}
+.team__slide-name{font-size: 20px;}
+.team__slide-status{
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+.team__slider-btn {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: #fff;
+    opacity: .8;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    text-align: center;
+	margin-top: -40px;
+}
+.team__slider-btn--prev {
+    left: -100px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.team__slider-btn--next {right: -100px;}
+.team__slider-btn span {
+    display: block;
+    background-color: #878788;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -20px;
+    z-index: 1;
+}
+.team__slider-btn span:after, .team__slider-btn span:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 2px;
+    background-color: #878788;
+}
+.team__slider-btn span:before {
+    right: -4px;
+    top: -5px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.team__slider-btn span:after {
+    right: -3px;
+    top: 6px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width : 1279px){
+	.team__inner {
+		width: 100%;
+		max-width: 840px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	.team__slide-pic{height: 380px;}
+	.team .main-sec__link{display: none;}
+}
+@media only screen and (max-width : 1024px){
+	.team__inner {
+		max-width: 540px;
+		padding: 0;
+	}
+	.team__slide-pic{height: 380px;}
+}
+@media only screen and (max-width : 767px){
+	.team{
+		height: auto;
+		min-height: unset;
+		padding: 130px 0 250px;
+		display: block;
+	}
+	.team__wrap{padding: 0;}
+	.team__inner{padding: 0 15px;}
+	.team__inner {
+		max-width: 260px;
+		padding: 0;
+	}
+	.team__slide-pic{height: 380px;}
+	.team__slide-main{padding: 15px;}
+	.team__slide-name{font-size: 16px;}
+	.team__slide-status{font-size: 16px;}
+	.team__slider-btn--next{
+		right: -40px;
+		-webkit-transform: scale(.5);
+		-ms-transform: scale(.5);
+		-o-transform: scale(.5);
+		transform: scale(.5);
+	}
+	.team__slider-btn--prev{
+		left: -40px;
+		-webkit-transform: rotate(180deg) scale(.5);
+		-ms-transform: rotate(180deg) scale(.5);
+		-o-transform: rotate(180deg) scale(.5);
+		transform: rotate(180deg) scale(.5);
+	}
+}

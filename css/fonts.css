@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format("embedded-opentype"), 
+		url('../fonts/icomoon.ttf') format("truetype"), 
+		url('../fonts/icomoon.woff') format("woff"), 
+		url('../fonts/icomoon.svg') format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+
+[class*=" icon-"],
+[class^=icon-] {
+	font-family: 'icomoon'!important;
+	speak: none;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.icon-check:before {
+	content: "\f03a"
+}
+
+.icon-call:before {
+	content: "\e900"
+}
+
+.icon-instagram:before {
+	content: "\e901"
+}
+
+.icon-mail:before {
+	content: "\e902"
+}
+
+.icon-search:before {
+	content: "\e903"
+}
+
+.icon-whatsapp:before {
+	content: "\e904"
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap&subset=cyrillic,latin-ext');
+@import "vendors/foundation-icons.css";
+@import "fonts.css";
+@import "vendors/normalize.css";
+@import "vendors/swiper.min.css";
+@import "vendors/animate.css";
+@import "vendors/jquery-ui.css";
+
+@import "basic.css";
+@import "layout.css";
+@import "typographyc.css";
+@import "button.css";
+
+@import "header.css";
+@import "main.css";
+@import "feedback.css";
+@import "menu.css";
+@import "media-popup.css";
+@import "main-sec.css";
+@import "articles-list.css";
+@import "footer.css";
+@import "subs-form.css";
+@import "modal.css";
+@import "article.css";
+@import "article-nav.css";
+@import "mortgage.css";
+@import "documents.css";
+@import "build.css";
+@import "gallery.css";
+@import "about.css";
+@import "map-page.css";
+@import "team.css";
+
+

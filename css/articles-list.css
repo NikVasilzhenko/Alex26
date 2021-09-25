@@ -1,0 +1,94 @@
+.articles-list__inner{
+	max-width: 1230px;
+	padding-right: 30px;
+    padding-left: 30px;
+	margin: 0 auto;
+}
+.articles-list__wrap{
+	padding: 80px 0 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: stretch;
+	align-items: stretch;
+	justify-content: flex-start;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.articles-list__bar{padding: 30px 0 50px;}
+.articles-list__bar .btn{
+	margin: 0 auto;
+	width: 200px;
+}
+.news-item{
+	display: block;
+	width: calc(100% / 3);
+    padding: 0 15px;
+	margin-bottom: 60px;
+	color: #000;
+}
+.news-item:hover .news-item-desc{color: #c64654;}
+.news-item-pic__wrap{
+	height: 235px;
+	width: 100%;
+	overflow: hidden;
+}
+.news-item-pic {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+    transition: all 1.5s cubic-bezier(.215, .61, .355, 1) 0s;
+}
+.news-item:hover .news-item-pic {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.news-item-top {
+    padding-top: 25px;
+	font-size: 16px;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 10px 0 0;
+    color: #000;
+    opacity: .5;
+	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.news-item-desc{
+	margin: 10px 0;
+	font-size: 20px;
+	color: #000;
+	transition: color 1.5s cubic-bezier(.215, .61, .355, 1) 0s;
+}
+@media only screen and (max-width : 1279px){
+	.articles-list__inner{padding: 0 20px;}
+	.articles-list__wrap{padding: 20px 0;}
+	.news-item{
+		width: 50%;
+		padding: 0 10px;
+	}
+}
+@media only screen and (max-width : 767px){
+	.articles-list__inner{padding: 0 15px;}
+	.articles-list__wrap{padding: 15px 0;}
+	.news-item {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	.news-item-desc{font-size: 16px;}
+}

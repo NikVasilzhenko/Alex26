@@ -1,0 +1,61 @@
+/*baisic*/
+html, body{
+    height: 100%;
+    width: 100%;
+}
+html{font-size: 10px;}
+body{
+    font: 16px/1.4 'Playfair Display', serif;
+    color: #000;
+	background: #fff;
+    font-weight: 400;
+    min-width: 310px; 
+    height: 100%;
+    position: relative;
+	overflow-x: hidden;
+    font-stretch: condensed;
+    opacity: 1;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+	text-rendering:optimizeLegibility;
+}
+
+/*clearfix*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after {clear: both;}
+.clearfix{
+	zoom: 1;
+}
+
+/*box-sizing*/
+*, *:before, *:after, input[type="search"]{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*browserhappy*/
+.browserhappy{
+    background: red;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+    color: #fff;
+}
+.browserhappy strong{text-transform: uppercase;}
+.browserhappy a{
+	color: yellow;
+    text-decoration: underline;
+}
+.browserhappy a:hover{text-decoration: none;}
+.wow { visibility: hidden; }

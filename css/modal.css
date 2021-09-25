@@ -1,0 +1,119 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+	overflow-x: hidden;
+    overflow-y: auto;
+	background-color: #0f0f11;
+}
+#success-modal .modal-dialog {
+    height: 100%;
+	position: relative;
+}
+.modal-content {
+    position: relative;
+    background-clip: padding-box;
+    outline: 0;
+	    position: relative;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	background-color: transparent;
+    padding: 0 20px;
+}
+.modal-body {
+    background-color: #fff;
+    text-align: center;
+	    position: relative;
+    width: 100%;
+    max-width: 765px;
+    height: 400px;
+    margin: 10px auto;
+    padding: 100px 20px 20px;
+}
+.close-modal {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    right: 30px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.close-modal:after, .close-modal:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 2px;
+    background-color: #878788;
+}
+.close-modal:before {
+    right: 0;
+    -webkit-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(-45deg) translateY(-1px);
+    -ms-transform: rotate(-45deg) translateY(-1px);
+    transform: rotate(-45deg) translateY(-1px);
+}
+.close-modal:after {
+    left: 0;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(45deg) translate(1px, -2px);
+    -ms-transform: rotate(45deg) translate(1px, -2px);
+    transform: rotate(45deg) translate(1px, -2px);
+}
+.modal h4{
+	font-size: 24px;
+	max-width: 325px;
+	width: 100%;
+	margin: 30px auto;
+	font-weight: 400;
+}
+@media only screen and (max-width : 767px){
+	.modal{background: #fff;}
+	.modal-content{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.modal-body{
+		padding: 0;
+		width: 100%;
+		position: static;
+		height: auto;
+	}
+	.modal h4{font-size: 22px;}
+	.modal p{font-size: 18px;}
+	.close-modal{
+		top: 20px;
+		right: 15px;
+		width: 18px;
+    	height: 18px;
+	}
+	.close-modal:after, .close-modal:before{
+		width: 23px;
+		height: 1px;
+	}
+}
